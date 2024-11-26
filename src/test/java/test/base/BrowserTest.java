@@ -23,7 +23,6 @@ public class BrowserTest extends BaseTest {
 
         Assert.assertEquals(actualUrl, expectedUrl,"Failed");
 
-
     }
 
     @Test
@@ -36,7 +35,8 @@ public class BrowserTest extends BaseTest {
 
         logger.info("Verifying that the browser is opened and we are navigating to correct Url.");
 
-        WaitUtils.applyWait(driver,googleMainPage_pageFactory.aboutButton, CLICKABLE);
+        Object googleMainPage_PageFactory;
+        WaitUtils.applyWait(driver, GoogleMainPage_PageFactory.aboutButton, CLICKABLE);
 
         logger.info(("Validated the explicit wait on about button"));
 

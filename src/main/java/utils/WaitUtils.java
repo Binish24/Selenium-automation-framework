@@ -36,14 +36,12 @@ public class WaitUtils {
         }
     }
 
-    public static WebElement applyWait (WebDriver driver, WebElement webElement, WaitStrategy waitStrategy,By element) {
+    public static WebElement applyWait (WebDriver driver, WebElement webElement, WaitStrategy waitStrategy) {
         WebDriverWait wait = new WebDriverWait(driver,getTimeout());
 
         switch (waitStrategy) {
             case CLICKABLE:
                 return wait.until(ExpectedConditions.elementToBeClickable(webElement));
-            case PRESENCE:
-                return wait.until(ExpectedConditions.presenceOfElementLocated(element));
             case VISIBLE:
                 return wait.until(ExpectedConditions.visibilityOf(webElement));
             case NONE:;

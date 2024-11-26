@@ -100,7 +100,7 @@ public class ConfigManager {
 
             //load the base config under properties object
 
-            FileInputStream baseConfig = new FileInputStream( "src/main/resources/confiq/config.properties");
+            FileInputStream baseConfig = new FileInputStream( "src/main/resources/config/config.properties");
             properties.load(baseConfig);
             baseConfig.close();
 
