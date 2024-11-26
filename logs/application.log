@@ -1,0 +1,26 @@
+2024-11-23 00:28:32 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:30:16 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:34:39 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:42:02 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:42:07 INFO  BaseTest:73 - Started test with URL https://www.facebook.com/
+2024-11-23 00:42:07 INFO  BaseTest:20 - Verifying that the browser is opened and we are navigating to correct URL.
+2024-11-23 00:42:10 INFO  BaseTest:73 - Started test with URL https://www.facebook.com/
+2024-11-23 00:42:10 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
+2024-11-23 00:48:22 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:48:26 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:48:26 INFO  BaseTest:20 - Verifying that the browser is opened and we are navigating to correct URL.
+2024-11-23 00:48:28 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:48:29 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
+2024-11-23 00:49:01 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:49:04 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:49:04 INFO  BaseTest:20 - Verifying that the browser is opened and we are navigating to correct URL.
+2024-11-23 00:49:07 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:49:07 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
+2024-11-23 00:50:45 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:50:50 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:50:50 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
+2024-11-23 00:55:48 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-23 00:55:52 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:55:52 INFO  BaseTest:20 - Verifying that the browser is opened and we are navigating to correct URL.
+2024-11-23 00:55:54 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-23 00:55:55 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
