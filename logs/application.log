@@ -24,3 +24,15 @@
 2024-11-23 00:55:52 INFO  BaseTest:20 - Verifying that the browser is opened and we are navigating to correct URL.
 2024-11-23 00:55:54 INFO  BaseTest:73 - Started test with URL https://www.google.com/
 2024-11-23 00:55:55 INFO  BaseTest:36 - Verifying that the browser is opened and we are navigating to correct Url.
+2024-11-26 15:48:24 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 15:48:37 INFO  BaseTest:73 - Started test with URL https://www.google.com/
+2024-11-26 15:49:55 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 15:50:03 INFO  BaseTest:73 - Started test with URL https://www.amazon.com/
+2024-11-26 15:52:45 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 15:52:53 INFO  BaseTest:73 - Started test with URL https://www.amazon.com/
+2024-11-26 15:54:07 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 15:54:15 INFO  BaseTest:73 - Started test with URL https://www.amazon.com/
+2024-11-26 16:01:43 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 16:01:52 INFO  BaseTest:73 - Started test with URL https://www.amazon.com/
+2024-11-26 16:04:02 INFO  ConfigManager:115 - Configuration loaded for the Environment DEV
+2024-11-26 16:04:10 INFO  BaseTest:73 - Started test with URL https://www.amazon.com/

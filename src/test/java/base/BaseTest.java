@@ -77,11 +77,11 @@ public class BaseTest {
     /**
      * This method runs after each test method. It quits the WebDriver and closes the browser.
      */
-    @AfterMethod
-    public void tearDown() {
-        // Quit the WebDriver and close the browser window
-        DriverFactory.quitDriver();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        // Quit the WebDriver and close the browser window
+//        DriverFactory.quitDriver();
+//    }
 
 }
 
