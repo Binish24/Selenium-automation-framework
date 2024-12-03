@@ -35,7 +35,6 @@ public class CreateAmazonAccountSteps extends BaseTest {
 
     @When (" I click on sign in button")
         public void I_click_on_sign_in_button () {
-        WaitUtils.applyWait(driver,dashboardPf.signIn)
          dashboardPf.clickOnSignInButton();
     }
 
