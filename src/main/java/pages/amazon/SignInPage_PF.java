@@ -9,18 +9,20 @@ public class SignInPage_PF {
 
     WebDriver driver;
 
-    @FindBy(xpath = "//a[@id ='createAccountSubmit']")
-    WebElement CreateYourAmazonAccount;
+
+    @FindBy(xpath = "//a[@id='createAccountSubmit']")
+    WebElement createYourAmazonAccount;
 
 
-    public SignInPage_PF(WebDriver driver) {
+    public SignInPage_PF (WebDriver driver) {
+
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(driver,this);
+
     }
 
-    public void ClickOnCreateYourAmazonAccountButton() {
-
-        this.CreateYourAmazonAccount.click();
+    public void clickOnCreateYourAmazonAccountButton() {
+        this.createYourAmazonAccount.click();
     }
 
 }

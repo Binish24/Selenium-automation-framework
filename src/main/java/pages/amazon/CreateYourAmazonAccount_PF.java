@@ -8,55 +8,50 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CreateYourAmazonAccount_PF {
 
+
     WebDriver driver;
 
-@FindBy (id = "ap_customer_name")
+    @FindBy(xpath = "//input[@id ='ap_customer_name']")
     WebElement yourName;
 
-@FindBy (xpath = "//input[@id='ap_email']")
-WebElement PhoneNumberOrEmail;
+    @FindBy(xpath = "//input[@id ='ap_email']")
+    WebElement mobileNumberOrEmail;
 
-@FindBy(xpath = "//input[@id ='ap_password']")
-WebElement password;
+    @FindBy(xpath = "//input[@id='ap_password']")
+    WebElement password;
 
+    @FindBy(xpath = "//input[@id ='ap_password_check']")
+    WebElement re_enter_password;
 
-@FindBy(xpath = "//input[@id='ap_password_check']")
-WebElement Re_enter_Password;
+    @FindBy(xpath = "//input[@class ='a-button-input']")
+    WebElement verifyEmail;
 
-
-@FindBy(xpath = "//input [@id ='continue']")
-WebElement verify_email;
-
-public CreateYourAmazonAccount_PF (WebDriver driver) {
-    this.driver = driver;
-    PageFactory.initElements(driver, this);
-}
-
-public void enterYourName (String yourName) {
-
-    this.yourName.sendKeys("yourName");
-}
-
-public void enterPhoneNumberOrEmail(String email) {
-    this.PhoneNumberOrEmail.sendKeys("email");
-}
-
-public void enterPhoneNumberOrEmail(int phoneNumber) {
-        this.PhoneNumberOrEmail.sendKeys("phoneNumber");
+    public CreateYourAmazonAccount_PF (WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-public void password (String pass) {
+    public void enterYourName(String yourName) {
+        this.yourName.sendKeys(yourName);
+    }
 
-    this.password.sendKeys("passs");
-}
+    public void enterMobileNumberOrEmail (String mobileNumberOrEmail){
+        this.mobileNumberOrEmail.sendKeys(mobileNumberOrEmail);
+    }
 
-public void setRe_enter_Password (String re_enter_password) {
+     // public void enterMobileNumberOrEmail (int phoneNumber){
+     //    this.phoneNumber.sendKeys(Integer.toString(phoneNumber));
+     // }
 
-    this.Re_enter_Password.sendKeys("re_enter_password");
-}
+    public void enterPassword(String password) {
+        this.password.sendKeys(password);
+    }
 
-public void verify_email () {
-    this.verify_email.click();
-}
+    public void reEnterPassword (String re_enter_password) {
+        this.re_enter_password.sendKeys(re_enter_password);
+    }
+    public void verifyEmailButton(){
+        this.verifyEmail.click();
+    }
 
 }

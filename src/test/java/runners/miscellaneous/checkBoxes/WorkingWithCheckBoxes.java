@@ -1,4 +1,4 @@
-package runners.miscellaneous;
+package runners.miscellaneous.checkBoxes;
 
 public class WorkingWithCheckBoxes {
     public static void main(String[] args) {

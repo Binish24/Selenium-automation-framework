@@ -1,5 +1,6 @@
 package pages.amazon;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,17 +10,21 @@ public class Dashboard_PF {
 
     WebDriver driver;
 
-        @FindBy(xpath ="//span[text()='Hello, sign in']")
-        WebElement signIn;
+    public final WebElement signIn;
 
-        public Dashboard_PF (WebDriver driver) {
-            this.driver =driver;
-            PageFactory.initElements(driver, this ); //we can also use Dashboard.class. // this means, this page
-        }
 
-        public void ClickOnSignInButton () {
+ // constructor to initialize the WebDriver
+    public Dashboard_PF(WebDriver driver) {
+        this.driver= driver;
+        //Manually locating the element
+        this.signIn=driver.findElement(By.xpath( "//span[text() ='Hello, sign in']")); // this means, this  current page and all elements/ Dashboard class
+    }
 
-            this.signIn.click();
-        }
+    //Actions for elements   (for this purpose we are going to create a method!)
+    public void clickOnSignInButton () {
+         this.signIn.click();
+
+    }
+
 
     }

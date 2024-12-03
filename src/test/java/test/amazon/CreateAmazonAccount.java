@@ -23,17 +23,20 @@ public class CreateAmazonAccount extends BaseTest {
         SignInPage_PF signInPagePf = new SignInPage_PF(driver);
         CreateYourAmazonAccount_PF createYourAmazonAccount_PF= new CreateYourAmazonAccount_PF(driver);
 
-        dashboardPf.ClickOnSignInButton();
+
+        dashboardPf.clickOnSignInButton();
         WaitUtils.applyGlobalWait();
 
-        signInPagePf.ClickOnCreateYourAmazonAccountButton();
+        signInPagePf.clickOnCreateYourAmazonAccountButton();
         WaitUtils.applyGlobalWait();
 
         createYourAmazonAccount_PF.enterYourName("Michel Jackson");
-        createYourAmazonAccount_PF.enterPhoneNumberOrEmail("benish.ranna@gmail.com");
+        createYourAmazonAccount_PF.enterMobileNumberOrEmail("benish.ranna@gmail.com");
         //createYourAmazonAccount_PF.enterPhoneNumberOrEmail(243242423);
-        createYourAmazonAccount_PF.password("benish123");
-        createYourAmazonAccount_PF.verify_email();
+        createYourAmazonAccount_PF.enterPassword("benish123");
+        createYourAmazonAccount_PF.reEnterPassword("benish123");
+        createYourAmazonAccount_PF.verifyEmailButton();
+
 
         WaitUtils.applyGlobalWait();
 
