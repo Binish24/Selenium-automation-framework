@@ -1,18 +1,16 @@
-package stepdefinations;
+package base.Examples;
 
 
 import base.BaseTest;
-import config.ConfigManager;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.After;
-import org.junit.Before;
 import pages.amazon.CreateYourAmazonAccount_PF;
 import pages.amazon.Dashboard_PF;
 import pages.amazon.SignInPage_PF;
-import utils.WaitUtils;
 
 public class CreateAmazonAccountSteps extends BaseTest {
 
@@ -33,9 +31,9 @@ public class CreateAmazonAccountSteps extends BaseTest {
     @Given("I am on the amazon web page")
             public void I_am_on_the_amazon_web_page() {}     //{driver.get(ConfigManager.getProperty("baseUrl"));}
 
-    @When (" I click on sign in button")
+    @When ("I click on sign in button")
         public void I_click_on_sign_in_button () {
-         dashboardPf.clickOnSignInButton();
+    dashboardPf.clickOnSignInButton();
     }
 
     @And("I click on Create amazon account button")
@@ -68,7 +66,12 @@ public class CreateAmazonAccountSteps extends BaseTest {
     createYourAmazonAccountPf.verifyEmailButton();
     }
 
-    @After
+    @Then("I should see the amazon dashboard")
+    public void I_should_see_the_amazon_dashboard () {
+    createYourAmazonAccountPf.verifyEmailButton();
+    }
+
+   @After
     public void tearDownDriver () {
     tearDown();
     }

@@ -6,7 +6,7 @@ public enum Browser {
     EDGE,
     SAFARI
 
-    //What are Enums? Enums are instance for enumiration and it is a collection and it is a group of constant values
-    //or like final values and they can not be changed.
+    //What are Enums? Enums are instance for enumeration. it is a collection and a group of constant values
+    //or like final values they can not be changed.
 
 }

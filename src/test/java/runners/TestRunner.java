@@ -6,7 +6,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-        features = "src/test/resources/features",
+        features = "src/test/resources/features/amazon/CreateAccount.feature",
+        //features ="src/test/resources/features",
+        //features ="src/test/resources/features/amazon",
+
         glue ="stepdefinations"
 )
 

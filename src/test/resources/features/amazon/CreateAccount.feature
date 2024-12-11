@@ -1,17 +1,20 @@
 Feature: Create amazon account
 
-  Background:
+#  Background:
+#    Given I am on the amazon web page
+#    When I click on sign in button
+#    And I click on Create amazon account button
+
+
+ Scenario: Successfully create account with valid email
     Given I am on the amazon web page
     When I click on sign in button
     And I click on Create amazon account button
-
-
- Scenario : Successfully create account with valid email
-    And I enter name as value for your name field
-    And I enter email as a value for Mobile number or email field
+    And I enter username as value for your name field
+    And I enter phone number as a value for Mobile number or email field
     And I enter password as valid password value for password field
     And I re-enter password as valid password value in Re-enter password field
-    And I click on verify email button
+    And I click on verify phone number button
     Then I should see the amazon dashboard
 
 #Examples:
